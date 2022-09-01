@@ -32,5 +32,6 @@ When you make 5 correct answer the joker will be available again for you to use.
 
 After finising the game, you will see your results depending on the outcome of your actions. Ass you can see on the top picture i have answered 0 out of 5 sports questions correctly. Thats why i get %0 score.
 
-     The core of the game was made by Gary Pettie from GameDev.tv Team. This game was a part of the 2D Unity course from udemy. After Mr.Gary finished the game i have made some additions to the game like a new wrong answer sprite to highlight the wrong answer, category system, 50:50 joker, score result screen for every category, new start screen, added audio for; start screen, correct answer, wrong answer, result screen and when a new questions comes. 
-     Thats all from me today see you on the next project!
+The core of the game was made by Gary Pettie from GameDev.tv Team. This game was a part of the 2D Unity course from udemy. After Mr.Gary finished the game i have made some additions to the game like a new wrong answer sprite to highlight the wrong answer, category system, 50:50 joker, score result screen for every category, new start screen, added audio for; start screen, correct answer, wrong answer, result screen and when a new questions comes. 
+
+Thats all from me today see you on the next project!
