@@ -49,6 +49,7 @@ public class ScoreKeeper : MonoBehaviour
     {
         return geographyCorrectAnswers;
     }
+    
     public void IncrementSportsQuestionSeen()
     {
         sportsQuestionSeen++;

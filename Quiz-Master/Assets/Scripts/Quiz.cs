@@ -47,6 +47,7 @@ public class Quiz : MonoBehaviour
     [SerializeField] TextMeshProUGUI icon5050;
 
     public bool isComplete;
+    public bool displayCancel = true;
     void Awake()
     {
         timer = FindObjectOfType<Timer>();
@@ -66,15 +67,19 @@ public class Quiz : MonoBehaviour
                 isComplete = true;
                 return;
             }
-
+            displayCancel = true;
             hasAnsweredEarly = false;
             GetNextQuestion();
             timer.loadNextQuestion = false;
         }
         else if(!hasAnsweredEarly && !timer.isAnsweringQuestion)
         {
-            DisplayAnswer(-1);
-            SetButtonState(false);
+            if(displayCancel == true){
+                DisplayAnswer(-1);
+                SetButtonState(false);
+                displayCancel = false;
+            }
+            
         }
         if(another5050Chance==5)
         {
@@ -106,7 +111,7 @@ public class Quiz : MonoBehaviour
     }
     void DisplayAnswer(int index)
     {
-        if(index == currentQuestion.GetCorrectAnswerIndex()){
+       if(index == currentQuestion.GetCorrectAnswerIndex()){
             questionText.text = "Correct";
             buttonImage = answerButtons[index].GetComponent<Image>(); 
             buttonImage.sprite = correctAnswerSprite;  
